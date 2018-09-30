@@ -1,0 +1,145 @@
+.bttn {
+    transition: all 0.3s ease 0s;
+    background: #0b60a9;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.8;
+    padding: 10px 35px;
+    border: none;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 135px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    font-weight: 500;
+    &:hover {
+        background-color: #222;
+        text-decoration: none; 
+        color: #fff;
+        box-shadow: 0px 2px 7px 0px rgba(162, 160, 160, 0.54); 
+    }
+}
+.head-row {
+    h1 {
+        margin-bottom: 10px;
+        position: relative;
+        font-size: 33px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+        color: $black;
+    }
+    p {
+        font-size: 16px;
+        margin: 0 auto 50px;
+        max-width: 700px;
+        text-align: center;
+    }
+    span {
+        height: 3px;
+        width: 80px;
+        margin: 0 0 15px;
+        border-bottom: 2px solid $pColor;
+        position: relative;
+        display: inline-block;
+        &::before {
+            width: 45px;
+            height: 2px;
+            margin-left: 17px;
+            content: "";
+            display: block;
+            background: $pColor;
+            margin: 5px auto;
+        }
+    }
+}
+.myCard {
+    position: relative;
+    z-index: 9;
+    padding: 40px 30px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 32px 0px rgba(122,122,122,0.1);
+    transition: all 0.3s;
+    &:hover {
+        box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+        transform: translateY(-10px);
+        transition: all 0.3s;
+    
+    }
+}
+.iconHover {
+        color: #0b60a9;
+        line-height: 0.6;
+        transition: transform 0.2s ease 0s, opacity 0.2s ease 0s;
+        padding: 28px 0;
+        font-size: 37px;
+        display: block;
+        height: 95px;
+        width: 95px;
+        text-align: center;
+        border-radius: 100%;
+        background: #0b60a90f;
+        text-shadow: 3px 3px 8px #ececec;
+        margin: 0 auto 25px;
+        position: relative;
+        transition: all 0.3s;
+        &::before {
+            position: absolute;
+            content: "";
+            width: 95px;
+            height: 95px;
+            left: 0;
+            top: 0;
+            border-radius: 100%;
+            transition: all 0.3s;
+            border-color: #0b60a90f;
+        
+        }
+        &:hover {
+        transition: all 0.3s;
+            &::before {
+                width: 125px;
+                height: 125px;     
+                border: 5px solid #0b60a90f;
+                left: -15px;
+                top: -15px;
+                transition: all 0.3s;
+            
+            }
+        }
+}
+.socials {
+    a {
+        text-decoration: none;
+        i {
+            color: lighten($sColor,10);
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            border-radius: 100%;
+            line-height: 40px;
+            transition: all 0.5s;
+
+        }
+        &:hover {
+             i {
+                 color: $white;
+             }
+            .fa-facebook-f {
+                background-color: #3b5998;
+            }
+            .fa-twitter {
+                background: #00aced;
+            }
+            .fa-linkedin-in {
+                background: #007bb6;
+            }
+            .fa-instagram {
+                background: #517fa4;
+            }
+        }
+    }
+}
